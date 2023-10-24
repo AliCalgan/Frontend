@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+        width: 700px;
+      }
+      table {
+        width: 100%;
+      }
+      /* table th {
+        text-align: left;
+      }
+      table th:last-child,
+      table td:last-child {
+        text-align: right;
+      } */
+
+      .car-table {
+        width: 400px;
+      }
+
+      .car-table td {
+        border: 1px solid black;
+      }
+
+      .agenda-table th,
+      .agenda-table td {
+        text-align: center;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Ülke</th>
+          <th>Şehir</th>
+          <th>Nüfus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Türkiye</td>
+          <td>Ankara</td>
+          <td>6.000.000</td>
+        </tr>
+
+        <tr>
+          <td>Ingiltere</td>
+          <td>Liverpool</td>
+          <td>3.000.000</td>
+        </tr>
+        <tr>
+          <td>İspanya</td>
+          <td>Madrid</td>
+          <td>6.000.000</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th>Ay</th>
+          <th>Satılan Kitap Miktarı</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>Toplam</td>
+          <td>5.000 adet</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>Şubat</td>
+          <td>2.000 adet</td>
+        </tr>
+        <tr>
+          <td>Mart</td>
+          <td>3.000 adet</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="8">Haftalık Ajanda</th>
+        </tr>
+        <tr>
+          <th>Saat</th>
+          <th>Pazartesi</th>
+          <th>Salı</th>
+          <th>Çarşamba</th>
+          <th>Perşembe</th>
+          <th>Cuma</th>
+          <th>Cumartesi</th>
+          <th>Pazar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><time>08:00</time>-<time>09:00</time></td>
+          <td>Yürüyüş</td>
+          <td>Yürüyüş</td>
+          <td>Yürüyüş</td>
+          <td>Yürüyüş</td>
+          <td>Kahvaltı</td>
+          <td>Kahvaltı</td>
+        </tr>
+        <tr>
+          <td><time>09:00</time>-<time>10:00</time></td>
+          <td>Ofis</td>
+          <td>Ofis</td>
+          <td>Ofis</td>
+          <td>Ofis</td>
+          <td>Ofis</td>
+          <td>Yürüyüş</td>
+          <td>Yürüyüş</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="car-table">
+      <tr>
+        <td colspan="3">2022</td>
+      </tr>
+      <tr>
+        <td colspan="2" rowspan="2">Tesla Model Y</td>
+        <td>1000</td>
+      </tr>
+      <tr>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td colspan="2">Tesla Model X</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+        <td>&nbsp</td>
+      </tr>
+    </table>
+    <table class="agenda-table">
+      <thead>
+        <tr>
+          <th colspan="8">Haftalık Ajanda</th>
+        </tr>
+        <tr>
+          <th>&nbsp;</th>
+          <th colspan="5">Hafta içi</th>
+          <th colspan="2">Hafta sonu</th>
+        </tr>
+        <tr>
+          <th>Saat</th>
+          <th>Pazartesi</th>
+          <th>Salı</th>
+          <th>Çarşamba</th>
+          <th>Perşembe</th>
+          <th>Cuma</th>
+          <th>Cumartesi</th>
+          <th>Pazar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><time>08:00</time>-<time>09:00</time></td>
+          <td colspan="5">Yürüyüş</td>
+          <td colspan="2">Kahvaltı</td>
+        </tr>
+        <tr>
+          <td><time>09:00</time>-<time>10:00</time></td>
+          <td colspan="3">&nbsp;</td>
+          <td colspan="2">&nbsp;</td>
+          <td>Film</td>
+          <td>Film</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

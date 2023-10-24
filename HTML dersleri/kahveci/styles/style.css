@@ -1,0 +1,77 @@
+.checkout-form {
+  padding: 15px;
+}
+.checkout-form .form-group input,
+.checkout-form .form-group label,
+.checkout-form .form-group select {
+  width: 200px;
+  display: inline-block;
+}
+
+.checkout-form .form-group {
+  margin-bottom: 15px;
+}
+.checkout-form fieldset {
+  margin-bottom: 15px;
+}
+.odeme,
+.odeme2 {
+  margin: 15px;
+}
+
+.mybody {
+  font-family: "Open Sans", sans-serif;
+  color: #192a56;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.first-class {
+  background-color: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+label {
+  /* display: block; */
+  margin: 10px 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  color: #333;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #3498db;
+  color: #fff;
+}
+
+button {
+  display: block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2577a9;
+}

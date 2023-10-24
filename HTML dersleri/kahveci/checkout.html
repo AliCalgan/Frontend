@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <section>
+      <form class="checkout-form" action="">
+        <fieldset>
+          <legend>Fatura Adresi</legend>
+          <div class="form-group">
+            <label for="firstName">Firs Name</label>
+            <input
+              type="text"
+              required
+              name="firstName"
+              id="firstName"
+              autofocus
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" required name="lastName" id="lastName" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" required name="email" id="email" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Teslimat Adresi</legend>
+          <div class="form-group">
+            <label for="city">Şehir</label>
+            <select name="city" id="city" required>
+              <option></option>
+              <option value="ist">İstanbul</option>
+              <option value="ank">Ankara</option>
+              <option value="izm">İzmir</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="country">İlçe</label>
+            <select name="country" id="country" required>
+              <option></option>
+              <option value="bjk">Beşilktaş</option>
+              <option value="kdk">Kadıköy</option>
+              <option value="usk">Üsküdar</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="address">Adres1</label>
+            <input type="text" name="address" id="address" required />
+          </div>
+          <div class="form-group">
+            <label for="address2">Adres2</label>
+            <input type="text" name="address2" id="address2" required />
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="sameAddress"
+              id="sameAddress"
+              required
+            />
+            <label for="sameAddress">Teslimat ile Fatura adresi aynı</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="odeme">Ödeme Bilgileri</legend>
+          <div class="odeme2">
+            <input type="radio" name="paymentMethod" id="masterCard" required />
+            <label for="masterCard">Master Card</label>
+            <input type="radio" name="paymentMethod" id="visaCard" required />
+            <label for="visaCard">Visa Card</label>
+            <input type="radio" name="paymentMethod" id="debitCard" required />
+            <label for="debitCard">Debit Card</label>
+          </div>
+          <div class="form-group">
+            <label for="nameOnCard">Kart İsmi :</label>
+            <input
+              type="text"
+              id="nameOnCard"
+              pattern="[A-Za-z]{5,30}"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="cardNumber">Kart Numarası :</label>
+            <input
+              type="text"
+              id="cardNumber"
+              pattern="[0-9]{16,16}"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="expireDate">Son Kullanma Tarihi</label>
+            <input type="text" id="expireDate" pattern="[0-9]{5,5}" required />
+          </div>
+          <div class="form-group">
+            <label for="cvvNumber">Güvenlik Numarası</label>
+            <input type="text" id="cvvNumber" pattern="[0-9]{3,3}" required />
+          </div>
+        </fieldset>
+        <button type="submit">Ödeme Yap</button>
+      </form>
+    </section>
+  </body>
+</html>

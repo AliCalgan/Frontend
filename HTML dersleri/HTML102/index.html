@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="checkout.html">
+      <button type="submit">Ödeme</button>
+      <button type="submit" form="save.html">Kaydet</button>
+    </form>
+    <form action="checkout.html">
+      <input type="hidden" name="browser" value="chrome" /><br />
+      <input type="date" name="date" /><br />
+      <input type="datetime-local" name="datetime" /><br />
+      <input type="month" name="month" /><br />
+      <input type="time" name="time" /><br />
+      <input type="week" name="week" /><br />
+      <label>
+        <input type="date" min="2023-12-31" />31 aralık 2023 ten sonra bir tarih
+        seçin
+      </label>
+      <br />
+      <label>
+        <input type="date" max="2023-12-31" />31 aralık 2023 ten önce bir tarih
+        seçin </label
+      ><br />
+      <label>
+        <input type="date" min="2023-12-31" max="2024-01-06" />31 aralık 2023
+        ile 6 ocak 2024 arası bir tarih seçin </label
+      ><br />
+      <input type="url" placeholder="web adresi giriniz" required />
+
+      <button type="submit">Gönder</button>
+    </form>
+  </body>
+</html>

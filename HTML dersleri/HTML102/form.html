@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="save.php" target="_blank" method="get">
+      <!-- target hedef url nerde açılacağını gösterir , method ise get,post hangisi ise onu kullanmanı sağlar-->
+      <a href="meta.html" target="_blank">META</a>
+      <br />
+      <input type="text" name="productname" placeholder="product name" />
+      <br />
+      <input
+        type="number"
+        min="0"
+        max="100"
+        disabled
+        step="5"
+        name="price"
+        placeholder="price"
+        id="id"
+      />
+      <br />
+      <input type="number" name="oldprice" readonly value="100" />
+      <br />
+      <button type="submit">Gönder</button>
+    </form>
+    <br />
+    <form action="" novalidate autocomplete="on">
+      <input type="email" name="email" autofocus required />
+      <br />
+      <input type="password" name="password" maxlength="8" />
+      <br />
+      <button type="submit">Login</button>
+      <br />
+      <input type="button" value="Gönderr" />
+      <!-- eski kullanım -->
+      <label><input type="checkbox" />Beni Hatırla</label>
+      <br />
+      <input type="checkbox" name="rememberme" id="remember" />
+      <label for="remember">Remember Me</label>
+      <!--Böyle yaparak label ve inputu bağdaştırdık , input id si ile label i bağladık nerde olduğunu bir önemi yok label e basıldığında checkbox tetiklenecek-->
+      <br />
+      <!-- Aynı grup içinde ki radio butonların name leri aynı olmalıdır -->
+
+      <input id="genderMen" type="radio" name="gender" value="men" />
+      <label for="genderMen">Erkek</label>
+
+      <input type="radio" name="gender" value="genderWomen" />
+
+      <label for="genderWomen">Kadın</label>
+
+      <!--cameCase , snake_case , kebab-case, PascalCase --isimlendirme biçimleridir-- -->
+      <br />
+      <input type="tel" placeholder="telefon" />
+      <br />
+      <textarea
+        name="adres"
+        maxlength="300"
+        id=""
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+      <label for="city">Şehir Seç</label>
+      <select name="city" id="city">
+        <option value="">Seçim Yapınız</option>
+        <option value="06">Ankara</option>
+        <option value="12">Bingöl</option>
+        <option value="34">İstanbul</option></select
+      ><br />
+      <label for="vehicle">Araç Seç</label>
+      <select name="vehicle" id="vehicle" multiple>
+        <option value="">Seçim Yapınız</option>
+        <optgroup label="Araba">
+          <option value="audi" selected>Audi</option>
+          <option value="bmw">Bmw</option>
+          <option value="mercedes">Mercedes</option>
+        </optgroup>
+        <optgroup label="Motorsiklet">
+          <option value="dukati">Dukati</option>
+          <option value="honda" selected>Honda</option>
+          <option value="kawasaki">Kawasaki</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>
